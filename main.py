@@ -3,7 +3,6 @@ from dataclasses import dataclass
 
 from drafter import (Button, Header, LineBreak, Page, SelectBox, Table,
                      TextBox, route, set_site_information, start_server)
-from scipy import stats  # ADVANCED TECHNIQUE: not covered in class (see below)
 
 set_site_information(
     author="YOUR NAME",
@@ -94,7 +93,6 @@ def estimate_gallons(trips: list[VehicleTrip], distance: float) -> float:
     if mpg > 0:
         return distance / mpg
     return 0.0
-
 
 
 
